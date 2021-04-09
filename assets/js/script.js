@@ -30,8 +30,7 @@ function generatePassword() {
 // gatherCriteria function
 function gatherCriteria(){
 
-  while (pwCriteria.length < 8 || pwCriteria.length > 128
-          && pwCriteria.length) {
+  while (pwCriteria.length < 8 || pwCriteria.length > 128) {
     pwCriteria.length = prompt("Please enter length of password: [ 8 - 128 ]");
     if (pwCriteria.length < 8 || pwCriteria.length > 128) {
       alert("please select a length between 8 - 128");
